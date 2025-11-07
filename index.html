@@ -75,13 +75,17 @@
     <footer>
         <section id="contact">
             <h2>me contate via e-mail:</h2>
-            <form action="mailto:your_email@example.com?subject=Form Submission&body=Name: %0D%0AEmail: %0D%0AMessage:" method="post" enctype="text/plain">
+
+            <form id="formContato" method="post">
                 <label for="name">nome:</label><br>
-                <input type="text" id="name" name="name"><br><br>
+                <input id="name" type="text" name="name"><br><br>
+
                 <label for="email">e-mail:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                <input id="email" type="email" name="email"><br><br>
+
                 <label for="message">mensagem:</label><br>
                 <textarea id="message" name="message"></textarea><br><br>
+
                 <button id="enviarEmail" type="submit"> enviar </button>
               </form>
         </section>
