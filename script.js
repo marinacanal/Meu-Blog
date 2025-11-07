@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const pagina = window.location.pathname;
 
-    if (pagina.includes("index.html")) {
+    if (pagina.includes("index.html") || pagina.endsWith("/")) {
         const body = document.body;
         const botoes = document.querySelectorAll('button');
         const botaoMudarFundo = document.getElementById('mudarFundo');
