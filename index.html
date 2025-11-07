@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Meu não sei site</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <img src="aguaviva.jpg" alt="" id="header-img-home">
+        <img src="medias/aguaviva.jpg" alt="" id="header-img-home">
         <h1>bem vindo</h1> 
     </header>
 
     <main>
         <nav>
-            <img src="aguaviva2.jpg" alt="">
+            <img src="medias/aguaviva2.jpg" alt="">
             <ul>
                 <li><a href="index.html">sobre</a></li>
                 <li><a href="blog.html">blog</a></li>
@@ -95,17 +95,7 @@
     <img src="https://pixelsafari.neocities.org/blinkies/painting.png">
     <img src="https://pixelsafari.neocities.org/blinkies/animal/catsunny.gif">
     <img src="https://pixelsafari.neocities.org/buttons/1neo29.gif">
-    
+
+    <script src="script.js"></script>
 </body>
-
-<script>
-    let pos = 0;
-    function moverFundo() {
-      pos += 0.7; 
-      document.body.style.backgroundPosition = `0 ${pos}px`;
-      requestAnimationFrame(moverFundo);
-    }
-    moverFundo();
-  </script>
-
 </html>

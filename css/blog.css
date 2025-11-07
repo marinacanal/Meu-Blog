@@ -6,7 +6,7 @@ body {
     margin: 2em;
 }
 
-.bg-video {
+video {
   position: fixed;
   top: 0;
   left: 0;
@@ -19,10 +19,8 @@ header {
     display: flex;
     width: 28em;
     height: 28em;
-    position: relative;
-    align-items: center;
-    justify-content: center; 
     margin: 0 auto;
+    justify-content: center;
 }
 
 header h1 {
@@ -40,4 +38,22 @@ article {
     padding: 2em;
     margin-bottom: 1em;
     border-radius: 1em;
+
+    opacity: 0;
+    transform: translateY(40px); /*move 40px pra baixo*/
+    transition: all 0.8s ease;
+}
+
+article.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#scroll-tip {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background-color: rgba(63, 61, 56, 0.75); 
+    padding: 0.7em;
+    border-radius: 0.6em;
 }

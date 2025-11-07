@@ -1,6 +1,6 @@
 body {
     /* background-color: rgb(135, 121, 106); */
-    background-image: url('background.JPG');
+    background-image: url('../medias/background.jpg');
     color: rgb(255, 189, 108);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -83,12 +83,13 @@ li a {
     display: inline-block;
     font-weight: bolder;
     color: black;
-    transition: all 0.3s ease;
+    transform: scale(1); 
+    transition: transform 0.3s, color 0.3s ease;
 }
 
 li a:hover {
     color: rgb(255, 189, 108);
-
+    transform: scale(1.1); /*deixa o elemento 10% maior*/
     /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
     text-shadow: 2px 2px 5px black;
 }
