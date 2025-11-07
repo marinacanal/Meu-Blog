@@ -3,6 +3,37 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (pagina.includes("index.html")) {
         const body = document.body;
+        const botoes = document.querySelectorAll('button');
+        const botaoMudarFundo = document.getElementById('mudarFundo');
+
+        window.addEventListener('load', () => {
+            alert('bem-vindo ao meu site!');
+            deuBoasVindas = true;
+        });
+
+        botaoMudarFundo.addEventListener('click', () => {
+            const fundoAtual = window.getComputedStyle(body).backgroundImage;
+
+            if (fundoAtual.includes('background.jpg')) {
+                body.style.backgroundImage = 'none';
+                botaoMudarFundo.innerText = 'ativar fundo!';
+                
+                botoes.forEach(botao => {
+                    botao.classList.remove('tema-quente');
+                    botao.classList.add('tema-frio');
+                });
+
+            } else {
+                body.style.backgroundImage = 'url("medias/background.jpg")';
+                botaoMudarFundo.innerText = 'remover fundo!';
+
+                botoes.forEach(botao => {
+                    botao.classList.remove('tema-frio');
+                    botao.classList.add('tema-quente');
+                });
+            }
+        });
+
         let posicao = 0;
 
         function moverFundo() {
@@ -15,7 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     if (pagina.includes("blog.html")) {
-        var scrollTip = document.createElement('div');
+        let scrollTip = document.createElement('div');
         scrollTip.id = 'scroll-tip';
         scrollTip.textContent = 'tente scrollar!';
         document.body.appendChild(scrollTip);
@@ -39,6 +70,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     artigo.classList.add('visivel'); 
                 }
             });        
-       });
+       });                   
     }
 });
