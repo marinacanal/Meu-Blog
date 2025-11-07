@@ -1,0 +1,149 @@
+body {
+    /* background-color: rgb(135, 121, 106); */
+    background-image: url('background.JPG');
+    color: rgb(255, 189, 108);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, h2 {
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+header img, nav img, article, aside, footer section, #web-badges-fundo {
+    border-radius: 1em;
+}
+
+header {
+    display: flex;
+    height: 20em;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    position: absolute;
+}
+
+header img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 1em 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 19%;
+    height: 22em;
+    justify-self: left;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+ul {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.1em;
+}
+
+hr {
+    color: wheat;
+}
+
+li a {
+    display: inline-block;
+    font-weight: bolder;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+li a:hover {
+    color: rgb(255, 189, 108);
+
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    text-shadow: 2px 2px 5px black;
+}
+
+article {
+    background-color: #3a1b13; 
+    flex: 1;
+    padding: 2em 3em;
+}
+
+article a {
+    color: wheat;
+}
+
+ol {
+    text-align: left;
+}
+
+aside {
+    width: 19%;
+    height: 22em;
+    background-color: rgb(145, 16, 31);  
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1em;
+}
+
+footer section {
+    padding: 2em;
+}
+
+#contact {
+    flex: 1;
+    background-color: #3a1b13;
+}
+
+input, textarea {
+    border: none;
+    border-radius: 0.5em;  
+}
+
+button {
+    padding: 0.8em;
+    color: rgb(255, 189, 108);
+    background-color: black;  
+    font-weight: bold;
+    border: none;
+    border-radius: 0.8em;  
+}
+
+button:hover {
+    color: black;
+    background-color: rgb(255, 189, 108);
+}

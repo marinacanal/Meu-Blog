@@ -1,0 +1,33 @@
+body {
+    display:flex;
+    flex-direction:column;
+    margin: 3em;
+    background-color: rgb(255, 189, 108);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: rgb(112, 12, 24);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing:border-box;
+    gap: 1em;
+    justify-content: center;
+}
+
+img {
+    width: auto;
+    height: 22em;
+    position: relative;
+    border-radius: 1em;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+  box-shadow: 0 10px 30px rgb(112, 12, 24, 0.5);
+}
