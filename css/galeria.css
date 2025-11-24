@@ -30,14 +30,16 @@ h1 {
 main {
     display: flex;
     flex-wrap: wrap;
-    box-sizing:border-box;
+    box-sizing: border-box;
     gap: 1em;
+    flex: 1;
     justify-content: center;
 }
 
 img {
-    width: auto;
-    height: 22em;
+    max-width: 100%;
+    height: auto;
+    max-height: 22em;  
     position: relative;
     border-radius: 1em;
     transition: all 0.3s ease;

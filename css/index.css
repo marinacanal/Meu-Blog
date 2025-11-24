@@ -51,17 +51,20 @@ header img {
 
 main {
     display: flex;
-    gap: 1em;
     flex-wrap: wrap;
+    gap: 1em;
     padding: 1em 0;
     width: 100%;
 }
 
+nav, article, aside, #contact {
+    flex: 1 1 auto; /* cresce, encolhe e tem min-width de ±300px */
+}
+
 nav {
     display: flex;
-    width: 19%;
+    width: 22em;
     height: 22em;
-    justify-self: left;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -105,11 +108,11 @@ li a:hover {
 }
 
 article {
+    width: 64em;
     padding: 2em 3em;
 }
 
 article, #contact {
-    flex: 1;
     background-color: #1f0d03;
 }
 
@@ -122,7 +125,7 @@ ol {
 }
 
 aside {
-    width: 19%;
+    width: 22em;
     height: 22em;
     background-color: rgb(145, 16, 31);  
 }
@@ -165,4 +168,11 @@ button:hover, .tema-quente:hover {
 .tema-frio:hover {
     color: black;
     background-color: rgb(240, 225, 200);
+}
+
+
+@media (max-width: 1550px) {
+    nav {
+        height: 10em;
+    }
 }

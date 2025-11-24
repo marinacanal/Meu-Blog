@@ -82,6 +82,7 @@ function eventosBlog() {
     const artigos = document.querySelectorAll('article');
 
     window.addEventListener('scroll', () => {
+        // exemplo de uso, novo foreach:
         // array.forEach(element => { 
         // });
         
@@ -93,7 +94,7 @@ function eventosBlog() {
             const alturaTela = window.innerHeight;
 
             if (posicao < alturaTela - 100) {
-                // classList é utilizado para manipular classes. Adicionar, remover, etc.
+                // classList é utilizado para manipular classes
                 artigo.classList.add('visivel'); 
             }
         });        
