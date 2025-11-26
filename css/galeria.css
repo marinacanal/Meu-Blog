@@ -8,6 +8,7 @@ body {
 
 #voltar {
     position: fixed;
+    display: inline-block;
     top: 1em;
     left: 1em;
     background-color: rgb(112, 12, 24);
@@ -47,4 +48,14 @@ img {
 
 img:hover {
   box-shadow: 0 10px 30px rgb(112, 12, 24, 0.5);
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 0.5em;
+    }
+
+    article {
+        padding: 2em 1.5em;
+    }
 }

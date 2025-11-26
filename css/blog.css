@@ -8,6 +8,7 @@ body {
 
 #voltar {
     position: fixed;
+    display: inline-block;
     top: 1em;
     left: 1em;
     background-color: rgba(44, 42, 39, 0.77);
@@ -71,4 +72,14 @@ article.visivel {
     background-color: rgba(44, 42, 39, 0.77);
     padding: 0.7em;
     border-radius: 0.6em;
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 0.5em;
+    }
+
+    article {
+        padding: 2em 1.5em;
+    }
 }
