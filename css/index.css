@@ -5,6 +5,7 @@ body {
     color: rgb(255, 189, 108);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
     margin: 2em;
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -58,12 +59,12 @@ main {
 }
 
 nav, article, aside, #contact {
-    flex: 1 1 auto; /* cresce, encolhe e tem min-width de ±300px */
+    flex: 1 1 auto; /* cresce, encolhe e tem min-width auto */
 }
 
 nav {
     display: flex;
-    width: 22em;
+    width: 20em;
     height: 22em;
     position: relative;
     align-items: center;
@@ -108,7 +109,7 @@ li a:hover {
 }
 
 article {
-    width: 64em;
+    width: 55em;
     padding: 2em 3em;
 }
 
@@ -125,9 +126,9 @@ ol {
 }
 
 aside {
-    width: 22em;
+    width: 20em;
     height: 22em;
-    background-color: rgb(145, 16, 31);  
+    background-color: rgb(153, 15, 31);  
 }
 
 footer {
@@ -150,6 +151,7 @@ input, textarea {
 button {
     padding: 0.8em;  
     font-weight: bold;
+    font-size: 1em;
     border: none;
     border-radius: 0.8em; 
 }
@@ -169,7 +171,6 @@ button:hover, .tema-quente:hover {
     color: black;
     background-color: rgb(240, 225, 200);
 }
-
 
 @media (max-width: 1550px) {
     nav {
