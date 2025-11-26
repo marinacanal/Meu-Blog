@@ -3,7 +3,7 @@ body {
     color: rgb(233, 227, 218);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 1em;
 }
 
 #voltar {
@@ -52,7 +52,6 @@ article {
     background-color: rgba(44, 42, 39, 0.77); 
     flex: 1;
     padding: 2em;
-    margin: 2em;
     margin-bottom: 1em;
     border-radius: 1em;
     opacity: 0;
@@ -75,8 +74,12 @@ article.visivel {
 }
 
 @media (max-width: 900px) {
+    body {
+        margin: 0.5em;
+    }
+    
     article {
         margin: 0.5em;
-        padding: 2em 1.5em;
+        padding: 2em 1.1em;
     }
 }

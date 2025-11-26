@@ -22,10 +22,17 @@ body {
     text-decoration: none;
 }
 
-h1 {
+header h1 {
     text-align: center;
     margin: 0;
     color: rgb(112, 12, 24);
+}
+
+header #kitty {
+    margin-bottom: 0.8em;
+    margin-left: 58%;
+    height: 4em;
+    width: 4em;
 }
 
 main {
@@ -52,10 +59,6 @@ img:hover {
 
 @media (max-width: 900px) {
     body {
-        margin: 0.5em;
-    }
-
-    article {
-        padding: 2em 1.5em;
+        margin: 2em 1.1em;
     }
 }

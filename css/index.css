@@ -1,5 +1,4 @@
 body {
-    /* background-color: rgb(135, 121, 106); */
     background-image: url('../medias/background.jpg');
     background-color: wheat;
     color: rgb(255, 189, 108);
@@ -7,6 +6,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     margin: 1em;
+
+    /* transicao suave quando o fundo é removido/trocado */
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -14,6 +15,7 @@ a {
     text-decoration: none;
 }
 
+/* centraliza elementos por padrão */
 ul, ol, h2 {
     margin: auto;
 }
@@ -183,6 +185,6 @@ button:hover, .tema-quente:hover {
     }
 
     article {
-        padding: 2em 1.5em;
+        padding: 2em 1.1em;
     }
 }
